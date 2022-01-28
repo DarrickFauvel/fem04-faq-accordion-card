@@ -31,24 +31,23 @@ img {
 body {
   font-family: 'Kumbh Sans', sans-serif;
   font-size: 1.2rem;
-  background-color: #b068e9;
   background-image: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
-  height: 100vh;
+  background-repeat: no-repeat;
+  background-color: #7d65e8;
+  height: 110vh;
 }
 
 .container {
-  /* height: 100vh; */
-}
-
-.main.wrapper {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2.4rem;
-  height: 100vh;
+}
+
+.card-wrapper {
+  padding: 50% 2.4rem 2.4rem;
+  /* margin-top: 20%; */
 }
 
 /* Card */
@@ -58,6 +57,97 @@ body {
   box-shadow: 0 5rem 5rem -2rem rgba(53, 18, 122, 0.497159);
   border-radius: 2.3rem;
   padding: 2.4rem;
+  position: relative;
+  z-index: 1;
+  /* margin-top: 20rem; */
+}
+
+.card::before {
+  content: url(./images/illustration-woman-online-mobile.svg);
+  position: absolute;
+  top: -21%;
+  left: 14%;
+  right: 14%;
+  max-width: 72%;
+}
+
+/* .card-image {
+  position: absolute;
+  max-width: 72%;
+  top: -20%;
+  left: 14%;
+  right: 14%;
+  z-index: -1;
+} */
+
+.card-image-shadow {
+  position: absolute;
+  max-width: 72%;
+  top: 0;
+  left: 14%;
+  right: 14%;
+}
+
+.card-title {
+  margin-top: 10rem;
+  font-size: 3.2rem;
+  text-align: center;
+  color: var(--color-very-dark-desaturated-blue);
+}
+
+/* FAQ list */
+.faq-list {
+  list-style: none;
+}
+
+.faq-item {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-light-grayish-blue);
+}
+
+.question {
+  position: relative;
+  padding: 0.5rem 0;
+  font-size: 1.4rem;
+  color: var(--color-very-dark-desaturated-blue);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.question::after {
+  content: url(./images/icon-arrow-down.svg);
+  position: absolute;
+  top: 0.5rem;
+  right: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.faq-item.active .question::after {
+  transform: rotateX(180deg);
+}
+
+.question:hover {
+  color: var(--color-soft-red);
+}
+
+.faq-item.active .question {
+  font-weight: bold;
+}
+
+.answer {
+  opacity: 0;
+  max-height: 0;
+  color: var(--color-dark-grayish-blue);
+  max-width: 95%;
+  line-height: 1.5;
+  transition: 0.2s ease-in-out;
+}
+
+.faq-item.active .answer {
+  opacity: 1;
+  max-height: max-content;
+  margin-top: 1.2rem;
 }
 
 /* Footer */
@@ -66,5 +156,5 @@ body {
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #fff;
 }
