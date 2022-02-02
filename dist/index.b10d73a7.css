@@ -1,0 +1,158 @@
+@import "https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap";
+:root {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.2rem;
+  background-image: linear-gradient(180deg, #af67e9 0%, #6565e7 100%);
+  background-repeat: no-repeat;
+  background-color: #6565e7;
+  min-height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main {
+  min-height: 100vh;
+}
+/* Card */
+.wrapper {
+  padding: 13rem 2.4rem 2.4rem;
+}
+@media (min-width: 992px) {
+  .wrapper {
+    padding: 13rem 2.4rem 2.4rem 2.4rem;
+    background-color: yellow;
+  }
+}
+.card {
+  position: relative;
+  max-width: 32.7rem;
+  background-color: white;
+  border-radius: 2.3rem;
+  padding: 2.4rem;
+  /* box-shadow: 0 5rem 5rem -2rem rgba(53, 18, 122, 0.497159); */
+}
+@media (min-width: 992px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 92rem;
+  }
+}
+.card::before {
+  content: url("illustration-woman-online-mobile.00ea2fd9.svg");
+  position: absolute;
+  top: -10.5rem;
+  left: 14%;
+  right: 14%;
+  max-width: 23.7rem;
+}
+@media (min-width: 992px) {
+  .card::before {
+    display: none;
+  }
+}
+.card::after {
+  content: url("bg-pattern-mobile.e49f2186.svg");
+  position: absolute;
+  top: 0;
+  left: 14%;
+  right: 14%;
+  max-width: 23.7rem;
+}
+@media (min-width: 992px) {
+  .card::after {
+    display: none;
+  }
+}
+.card__title {
+  margin-top: 10rem;
+  font-size: 3.2rem;
+  text-align: center;
+  color: #1d1e35;
+}
+@media (min-width: 992px) {
+  .card__title {
+    text-align: left;
+  }
+}
+/* FAQ list */
+.accordion {
+  list-style: none;
+}
+@media (min-width: 992px) {
+  .accordion {
+    max-width: 50%;
+  }
+}
+.accordion-item {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e7e7e9;
+}
+.accordion-button {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  padding: 0.5rem 0;
+  font-size: 1.4rem;
+  color: #1d1e35;
+  text-align: left;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: "Kumbh Sans", sans-serif;
+  transition: 0.2s ease-in-out;
+}
+.accordion-button::after {
+  content: url("icon-arrow-down.247b94e4.svg");
+  position: absolute;
+  top: 0.6rem;
+  right: 0;
+  transition: 0.2s ease-in-out;
+}
+.accordion-button:hover {
+  color: #f47c57;
+}
+.accordion-item_opened .accordion-button {
+  font-weight: bold;
+}
+.accordion-item_opened .accordion-button::after {
+  transform: rotate(180deg);
+}
+.accordion-item_opened .accordion-body {
+  opacity: 1;
+  max-height: max-content;
+  margin-top: 1.2rem;
+}
+.accordion-body {
+  opacity: 0;
+  max-height: 0;
+  color: #787887;
+  max-width: 95%;
+  line-height: 1.5;
+  transition: 0.2s ease-in-out;
+}
+/* Footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.attribution__link {
+  color: #fff;
+}
+/*# sourceMappingURL=index.b10d73a7.css.map */
