@@ -1,0 +1,26 @@
+{
+  "name": "faq-accordion-card-main",
+  "source": "src/index.html",
+  "version": "1.0.0",
+  "description": "![Design preview for the FAQ accordion card coding challenge](./design/desktop-preview.jpg)",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarrickFauvel/fem04-faq-accordion-card.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DarrickFauvel/fem04-faq-accordion-card/issues"
+  },
+  "homepage": "https://github.com/DarrickFauvel/fem04-faq-accordion-card#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.2.1",
+    "parcel": "^2.2.1",
+    "sass": "^1.49.7"
+  }
+}
