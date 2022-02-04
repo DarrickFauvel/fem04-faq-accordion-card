@@ -1,0 +1,87 @@
+@use '../abstracts' as *;
+
+.accordion {
+  list-style: none;
+  padding: 0;
+
+  @media (min-width: $breakpoint-lg) {
+    margin-top: 3.4rem;
+    margin-right: 8.8rem;
+    width: 33.5rem;
+  }
+
+  &__title {
+    margin-top: 10.2rem;
+    margin-bottom: 0.9rem;
+    font-size: 3.2rem;
+    text-align: center;
+    color: $clr-text-primary;
+
+    @media (min-width: $breakpoint-lg) {
+      margin-top: 0;
+      margin-bottom: 1.6rem;
+      text-align: start;
+    }
+  }
+
+  &-item {
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+    border-bottom: 1px solid $clr-divider;
+  }
+
+  &-button {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    padding: 0.5rem 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: $clr-text-primary;
+    text-align: left;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    border: none;
+
+    &::after {
+      content: url(./../images/icon-arrow-down.svg);
+      position: absolute;
+      top: 0.6rem;
+      right: 0;
+      transition: 0.2s ease-in-out;
+    }
+
+    &:hover {
+      color: $clr-text-primary-hover;
+    }
+  }
+
+  &-item_opened .accordion {
+    &-button {
+      font-weight: bold;
+      font-size: 1.25rem;
+
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+
+    &-body {
+      opacity: 1;
+      max-height: max-content;
+      margin-top: 0.25rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &-body {
+    opacity: 0;
+    max-height: 0;
+    color: $clr-text-secondary;
+    max-width: 95%;
+    line-height: 1.5;
+    transition: 0.2s ease-in-out;
+  }
+}

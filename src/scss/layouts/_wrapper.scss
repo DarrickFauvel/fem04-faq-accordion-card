@@ -1,0 +1,9 @@
+@use '../abstracts' as *;
+
+.wrapper {
+  padding: 14.9rem 2.4rem 2.4rem;
+
+  @media (min-width: $breakpoint-lg) {
+    padding: 0;
+  }
+}

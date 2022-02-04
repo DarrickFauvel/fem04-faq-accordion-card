@@ -1,0 +1,83 @@
+@use '../abstracts' as *;
+
+.card {
+  position: relative;
+  max-width: 32.7rem;
+  background-color: $clr-card-bg;
+  border-radius: 2.3rem;
+  padding: 2.4rem;
+  /* box-shadow: 0 5rem 5rem -2rem rgba(53, 18, 122, 0.497159); */
+
+  @media (min-width: $breakpoint-lg) {
+    display: flex;
+    // flex-direction: column;
+    justify-content: space-between;
+    // align-items: center;
+    width: 92rem;
+    height: 50.9rem;
+
+    max-width: 92rem;
+    min-height: 50.9rem;
+    margin-top: 12.9rem;
+    margin-left: 4.5rem;
+  }
+
+  &__image {
+    &-main {
+      position: absolute;
+      top: -10.5rem;
+      left: calc(50% - (23.7rem / 2));
+      background-image: url('./../images/illustration-woman-online-mobile.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 23.7rem;
+      height: 18rem;
+      z-index: 2;
+
+      @media (min-width: $breakpoint-lg) {
+        top: 7rem;
+        left: -8.5rem;
+        background-image: url('./../images/illustration-woman-online-desktop.svg');
+        width: 472px;
+        height: 359px;
+        clip: rect(0 472px 359px 85px);
+      }
+
+      &-shadow {
+        position: absolute;
+        top: 0;
+        left: calc(50% - (24rem / 2));
+        background-image: url('./../images/bg-pattern-mobile.svg');
+        background-size: auto;
+        background-repeat: no-repeat;
+        width: 240px;
+        height: 145px;
+        z-index: 1;
+
+        @media (min-width: $breakpoint-lg) {
+          background-image: url('./../images/bg-pattern-desktop.svg');
+          width: 964px;
+          height: 944px;
+          top: calc(-165px + -129px);
+          left: calc(-295px + -281px);
+          clip: rect(calc(165px + 129px) 964px 944px calc(295px + 281px));
+        }
+      }
+    }
+
+    &-box {
+      display: none;
+
+      @media (min-width: $breakpoint-lg) {
+        display: block;
+        position: absolute;
+        top: 20.5rem;
+        left: -9.3rem;
+        background-image: url('./../images/illustration-box-desktop.svg');
+        width: 191px;
+        height: 184px;
+        z-index: 3;
+      }
+    }
+  }
+}

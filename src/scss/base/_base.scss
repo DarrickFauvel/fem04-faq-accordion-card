@@ -1,0 +1,10 @@
+@use '../abstracts' as *;
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 1.2rem;
+  background-image: $gradient-body;
+  background-repeat: no-repeat;
+  background-color: $clr-body-bg;
+  min-height: 100%;
+}

@@ -1,0 +1,36 @@
+@use '../abstracts' as *;
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $breakpoint-lg) {
+    // justify-content: center;
+
+    .desktop-mock {
+      position: absolute;
+      z-index: 10;
+      width: 1440px;
+      height: 768px;
+      background-image: url('../images/desktop-design.jpg');
+      background-repeat: no-repeat;
+      opacity: 0.15;
+      // border: 2px solid yellow;
+      // left: 4rem;
+    }
+  }
+}
+
+.mobile-mock {
+  position: absolute;
+  z-index: 10;
+  width: 375px;
+  height: 768px;
+  background-image: url('../images/mobile-design.jpg');
+  background-repeat: no-repeat;
+  opacity: 0.15;
+  border: 1px solid red;
+  // left: 4rem;
+}
