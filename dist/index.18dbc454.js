@@ -526,9 +526,11 @@ const closeAllItems = ()=>{
 };
 items.forEach((item)=>{
     item.addEventListener('click', ()=>{
-        closeAllItems();
         if (item.classList.contains('accordion-item_opened')) item.classList.toggle('accordion-item_opened');
-        else item.classList.toggle('accordion-item_opened');
+        else {
+            closeAllItems();
+            item.classList.toggle('accordion-item_opened');
+        }
     });
 });
 
