@@ -1,13 +1,15 @@
 @use '../abstracts' as *;
 
 .accordion {
-  list-style: none;
-  padding: 0;
+  &__list {
+    list-style: none;
+    padding: 0;
 
-  @media (min-width: $breakpoint-lg) {
-    margin-top: 3.4rem;
-    margin-right: 8.8rem;
-    width: 33.5rem;
+    @media (min-width: $breakpoint-lg) {
+      margin-top: 3.4rem;
+      margin-right: 8.8rem;
+      width: 33.5rem;
+    }
   }
 
   &__title {
