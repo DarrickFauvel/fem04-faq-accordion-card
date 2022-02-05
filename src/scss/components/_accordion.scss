@@ -38,8 +38,8 @@
     width: 100%;
     max-width: 100%;
     padding: 0.5rem 0;
-    font-family: 'Kumbh Sans', sans-serif;
-    font-size: 1.2rem;
+    font-family: inherit;
+    font-size: 1.4rem;
     font-weight: normal;
     color: $clr-text-primary;
     text-align: left;
@@ -64,7 +64,7 @@
   &__item_opened .accordion {
     &__button {
       font-weight: bold;
-      font-size: 1.25rem;
+      font-size: 1.4rem;
 
       &::after {
         transform: rotate(180deg);
@@ -81,6 +81,7 @@
 
   &__body {
     opacity: 0;
+    font-size: 1.2rem;
     max-height: 0;
     color: $clr-text-secondary;
     max-width: 95%;
