@@ -1,9 +1,27 @@
 @use '../abstracts' as *;
 
 .container {
+  .mobile-mock {
+    position: absolute;
+    top: calc(50% - (768px / 2) + 2.4rem);
+    left: calc(50% - (375px / 2));
+    z-index: 10;
+    width: 375px;
+    height: 768px;
+    background-image: url('../images/mobile-design.jpg');
+    background-repeat: no-repeat;
+    opacity: 0.15;
+    border: 1px solid red;
+  }
+
   @media (min-width: $breakpoint-lg) {
+    .mobile-mock {
+      display: none;
+    }
     .desktop-mock {
       position: absolute;
+      top: calc(50% - (768px / 2) + 1rem);
+      left: calc(50% - (1440px / 2));
       z-index: 10;
       width: 1440px;
       height: 768px;
@@ -12,15 +30,4 @@
       opacity: 0.15;
     }
   }
-}
-
-.mobile-mock {
-  position: absolute;
-  z-index: 10;
-  width: 375px;
-  height: 768px;
-  background-image: url('../images/mobile-design.jpg');
-  background-repeat: no-repeat;
-  opacity: 0.15;
-  border: 1px solid red;
 }
