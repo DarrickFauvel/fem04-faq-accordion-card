@@ -83,12 +83,12 @@ body {
     text-align: start;
   }
 }
-.accordion-item {
+.accordion__item {
   padding-top: 1.1rem;
   padding-bottom: 1.1rem;
   border-bottom: 1px solid #e7e7e9;
 }
-.accordion-button {
+.accordion__button {
   position: relative;
   width: 100%;
   max-width: 100%;
@@ -103,30 +103,30 @@ body {
   transition: 0.2s ease-in-out;
   border: none;
 }
-.accordion-button::after {
+.accordion__button::after {
   content: url("icon-arrow-down.247b94e4.svg");
   position: absolute;
   top: 0.6rem;
   right: 0;
   transition: 0.2s ease-in-out;
 }
-.accordion-button:hover {
+.accordion__button:hover {
   color: #f47c57;
 }
-.accordion-item_opened .accordion-button {
+.accordion__item_opened .accordion__button {
   font-weight: bold;
   font-size: 1.25rem;
 }
-.accordion-item_opened .accordion-button::after {
+.accordion__item_opened .accordion__button::after {
   transform: rotate(180deg);
 }
-.accordion-item_opened .accordion-body {
+.accordion__item_opened .accordion__body {
   opacity: 1;
   max-height: max-content;
   margin-top: 0.25rem;
   margin-bottom: 0.5rem;
 }
-.accordion-body {
+.accordion__body {
   opacity: 0;
   max-height: 0;
   color: #787887;
