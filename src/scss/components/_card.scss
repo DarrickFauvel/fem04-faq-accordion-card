@@ -35,9 +35,14 @@
         top: 7rem;
         left: -8.5rem;
         background-image: url('./../images/illustration-woman-online-desktop.svg');
-        width: 472px;
-        height: 359px;
-        clip-path: polygon(85px 0, 472px 0, 472px 359px, 85px 359px);
+        width: 47.2rem;
+        height: 35.9rem;
+        clip-path: polygon(
+          8.5rem 0,
+          47.2rem 0,
+          47.2rem 35.9rem,
+          8.5rem 35.9rem
+        );
       }
 
       &-shadow {
@@ -47,21 +52,21 @@
         background-image: url('./../images/bg-pattern-mobile.svg');
         background-size: auto;
         background-repeat: no-repeat;
-        width: 240px;
-        height: 145px;
+        width: 24rem;
+        height: 14.5rem;
         z-index: 1;
 
         @media (min-width: $breakpoint-lg) {
           background-image: url('./../images/bg-pattern-desktop.svg');
-          width: 964px;
-          height: 944px;
-          top: calc(-165px + -129px);
-          left: calc(-295px + -281px);
+          width: 96.4rem;
+          height: 94.4rem;
+          top: calc(-16.5rem + -12.9rem);
+          left: calc(-29.5rem + -28.1rem);
           clip-path: polygon(
-            576px 294px,
-            964px 294px,
-            964px 800px,
-            576px 800px
+            57.6rem 29.4rem,
+            96.4rem 29.4rem,
+            96.4rem 80rem,
+            57.6rem 80rem
           );
         }
       }
@@ -76,8 +81,8 @@
         top: 20.5rem;
         left: -9.3rem;
         background-image: url('./../images/illustration-box-desktop.svg');
-        width: 191px;
-        height: 184px;
+        width: 19.1rem;
+        height: 18.4rem;
         z-index: 3;
       }
     }
