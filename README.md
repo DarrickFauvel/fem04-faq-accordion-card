@@ -65,6 +65,8 @@ Replaces this `clip`:
 }
 ```
 
+I also learned a lot more about Sass and how to organize and use partials.
+
 ### Useful resources
 
 - [MDN: clip - CSS Property](https://developer.mozilla.org/en-US/docs/web/css/clip) - This helped me learn how to use `clip` and that it is deprecated.
