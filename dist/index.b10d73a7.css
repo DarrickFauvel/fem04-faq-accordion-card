@@ -148,7 +148,7 @@ body {
   background-color: white;
   border-radius: 2.3rem;
   padding: 2.4rem;
-  /* box-shadow: 0 5rem 5rem -2rem rgba(53, 18, 122, 0.497159); */
+  box-shadow: 0 5rem 5rem -2rem rgba(53, 18, 122, 0.497159);
 }
 @media (min-width: 992px) {
   .card {
@@ -158,7 +158,6 @@ body {
     height: 50.9rem;
     max-width: 92rem;
     min-height: 50.9rem;
-    margin-top: 12.9rem;
     margin-left: 4.5rem;
   }
 }
@@ -180,7 +179,7 @@ body {
     background-image: url("illustration-woman-online-desktop.69cdd7e3.svg");
     width: 472px;
     height: 359px;
-    clip: rect(0 472px 359px 85px);
+    clip-path: polygon(85px 0, 472px 0, 472px 359px, 85px 359px);
   }
 }
 .card__image-main-shadow {
@@ -201,7 +200,7 @@ body {
     height: 944px;
     top: -294px;
     left: -576px;
-    clip: rect(294px 964px 944px 576px);
+    clip-path: polygon(576px 294px, 964px 294px, 964px 800px, 576px 800px);
   }
 }
 .card__image-box {
@@ -218,12 +217,6 @@ body {
     height: 184px;
     z-index: 3;
   }
-}
-.container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 @media (min-width: 992px) {
   .container .desktop-mock {
@@ -248,9 +241,12 @@ body {
 }
 .main {
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .wrapper {
-  padding: 14.9rem 2.4rem 2.4rem;
+  padding: 12rem 2.4rem 2.4rem;
 }
 @media (min-width: 992px) {
   .wrapper {
