@@ -40,7 +40,7 @@
         background-image: url('./../images/illustration-woman-online-desktop.svg');
         width: 472px;
         height: 359px;
-        clip: rect(0 472px 359px 85px);
+        clip-path: polygon(85px 0, 472px 0, 472px 359px, 85px 359px);
       }
 
       &-shadow {
@@ -60,7 +60,12 @@
           height: 944px;
           top: calc(-165px + -129px);
           left: calc(-295px + -281px);
-          clip: rect(calc(165px + 129px) 964px 944px calc(295px + 281px));
+          clip-path: polygon(
+            576px 294px,
+            964px 294px,
+            964px 800px,
+            576px 800px
+          );
         }
       }
     }
