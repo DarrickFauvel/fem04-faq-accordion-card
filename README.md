@@ -42,9 +42,9 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- Parcel
 - BEM
 - [Sass](https://www.sass-lang.com) - CSS with superpowers
+- [Parcel](https://parceljs.org) - Zero config build tool
 
 ### What I learned
 
